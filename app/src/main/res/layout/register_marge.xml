@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/Registration_nameWrapper"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        style="@style/ErrorInHintTextInput">
+
+        <EditText
+            android:textColor="@color/black"
+            android:id="@+id/Registration_name"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/signin_new_enter_name"
+            android:inputType="textPersonName" />
+    </com.google.android.material.textfield.TextInputLayout>
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/Registration_birthdayWrapper"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        style="@style/ErrorInHintTextInput">
+
+        <EditText
+            android:textColor="@color/black"
+            android:id="@+id/Registration_birthday"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/signin_new_birthday"
+            android:cursorVisible="false"
+            android:inputType="none"
+            android:textIsSelectable="false"
+            android:focusableInTouchMode="true"
+            android:windowSoftInputMode="stateAlwaysHidden"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/email_login_password_textInputLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        style="@style/ErrorInHintTextInput">
+        <EditText
+            android:textColor="@color/black"
+            android:id="@+id/password"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/signin_existing_password"
+            android:inputType="textPassword" />
+    </com.google.android.material.textfield.TextInputLayout>
+</merge>
